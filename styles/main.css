@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    font-family: 'MontserratRegular', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: white;
+}
+
+/*сброс отступов для заголовков*/
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-family: 'MontserratBold', sans-serif;
+}
+
+/*для всей страницы*/
+*,
+*:before,
+*:after{
+box-sizing: border-box;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Container
+===================*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;/* выравниваение по центру*/
+}
+
+
+/*https://html5book.ru/css3-flexbox/*/
+/* Header
+===================*/
+.header{
+    width: 100%;
+    height: 230px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding-top: 30px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+/* nav
+===================*/
+.nav{
+    display: flex;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-style:bold; /* полужирный */
+    font-weight: bold;
+
+}
+
+.nav__link{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;/*убрали подчеркивание снизу*/
+    vertical-align: top;
+    margin-left: 50px;
+    font-weight: bold;
+    opacity: .75;
+    transition: color .1s linear;
+}
+/*для первой ссылки убирается отступ*/
+.nav__link:first-child{
+    margin-left: 0;
+}
+/*при наведении*/
+.nav__link:hover{
+    color: #10C9C3;
+     opacity: 1;
+}
+
+
+/* contacts
+===================*/
+.header__contacts{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+._inner_header__contacts{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.inner__contacts_block{
+    display:block;
+    justify-content: inherit;
+    margin: 0 10px 0 30px;
+}
+
+
+
+
+.adress{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.social_site_block{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    box-shadow: 0 0 0 2px blue, 0 0 10px #333; /* Параметры теней */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vk_link{
+    color: black;
+    transition: all .8s ease;
+}
+
+.vk_link:hover{
+    fill: #10C9C3;
+}
+
+
+/* intro
+===================*/
+
+.intro {
+    height: 500px;
+    background: #31344e url(../pictures/banner.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.intro_title{
+    font-size: 60px;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'OpenSansSemibold', sans-serif;
+    text-align: center;
+}
+
+.intro__inner{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
